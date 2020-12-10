@@ -21,6 +21,9 @@ module.exports = {
     })
   ],
   resolve:{
-    extensions:['.js', '.jsx', '.json']  // can skip these extention.  
+    extensions:['.js', '.jsx', '.json'],  // can skip these extention.  
+    alias:{
+      '@': path.join(__dirname, './src')   //@ means this project src layer
+    }
   }
 };
