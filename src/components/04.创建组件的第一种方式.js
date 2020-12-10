@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { render } from "react-dom";
 
 
-import Hello from './components/Hello'
-
-
+function Hello (props){
+    console.log(props)
+    return <div>Hello component--- {props.name}</div>
+}
 
 const dog = {
     name : "dahuang",
